@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import './About.css';
-import paProfile from './images/PaProfile.JPG';
-import yochanan from './images/Yochanan.JPG';
-import noah from './images/Noah.JPG';
-import benjamin from './images/Benjamin.PNG';
+import paProfile from 'src/images/PaProfile.JPG';
+import yochanan from 'src/images/Yochanan.JPG';
+import noah from 'src/images/Noah.JPG';
+import benjamin from 'src/images/Benjamin.PNG';
 
 function About() {
     return (
