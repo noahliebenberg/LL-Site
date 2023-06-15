@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './About.css';
-import paProfile from './images/PaProfile.jpg';
+import paProfile from './images/PaProfile.JPG';
 import yochanan from './images/Yochanan.JPG';
 import noah from './images/Noah.JPG';
 import benjamin from './images/Benjamin.PNG';
