@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import './ProjectsSection.css';
-import turbineImage from './images/turbine.PNG';
-import carImage from './images/car.PNG';
-import wineImage from './images/wine-website.PNG';
+import turbineImage from '../../images/turbine.png';
+import carImage from '../../images/car.png';
+import wineImage from '../../images/wine-website.png';
 
 function ProjectsSection() {
 
