@@ -1,4 +1,6 @@
 import React, { useEffect, useRef  } from 'react';
+import { Link } from 'react-router-dom';
+
 import './ProjectsSection.css';
 import turbineImage from '../../images/turbine.png';
 import carImage from '../../images/car.png';
@@ -50,7 +52,7 @@ function ProjectsSection() {
     return (
         <section className="projects-section" id="Portfolio">
             <div className="project-section-text">
-                <div className="project-section-title">Past <span className="grey"> projects </span></div>
+                <div className="project-section-title">Project <span className="grey"> portfolio </span></div>
             </div>
 
             <section ref={slider} className="media-scroller snaps-inline">
@@ -59,6 +61,7 @@ function ProjectsSection() {
                         <div className="product-type">Desktop APPLICATION</div>
                         <div className="product-title">Turbine Damage Detector</div>
                         <div className="project-about">Developed a Python application to process wind turbine images and locate damage to be flagged for the user.</div>
+                        <div className="link-for-more"><Link to="/turbine">More Details</Link></div>
                     </div>
                     <div className="project-logo align-right">
                         <img className="img-product" src={turbineImage} alt="Turbine" />
@@ -68,8 +71,9 @@ function ProjectsSection() {
                 <div className="media-element" id="Product-3">
                     <div>
                         <div className="product-type">Mobile APPLICATION</div>
-                        <div className="product-title">AI Car Salesman</div>
-                        <div className="project-about">AutoPricer is the ultimate app for accurate car pricing and seamless buying and selling experiences. Powered by AI, it provides real-time valuations based on comprehensive market data. Access fair market values, compare prices.</div>
+                        <div className="product-title">Auto Sage</div>
+                        <div className="project-about">Auto Sage is the ultimate app for accurate car pricing and seamless buying and selling experiences. Powered by AI, it provides real-time valuations based on comprehensive market data. Access fair market values, compare prices.</div>
+                        <div className="link-for-more">  <Link to="/car">More Details</Link></div>
                     </div>
                     <div className="project-logo align-right">
                         <img className="img-product" src={carImage} alt="Car" />
@@ -81,6 +85,7 @@ function ProjectsSection() {
                         <div className="product-type">WEB APPLICATION</div>
                         <div className="product-title">WINE ART</div>
                         <div className="project-about">A project developed with Express, Node JS and deployed using Google cloud services. Get your portrait done in your favorite wine by simply uploading a picture. Transform Your Photos into Works of Art </div>
+                        <div className="link-for-more"><Link to="/wine">More Details</Link></div>
                     </div>
                     <div className="project-logo align-right">
                         <img className="img-product" src={wineImage} alt="Wine" />

@@ -70,7 +70,7 @@
 .media-element:hover {
     box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .38);
     transform: scale(1.03);
-    cursor: pointer;
+    cursor: auto;
 }
 
 
@@ -137,13 +137,12 @@
 .product-title {
     font-family: "larken", sans-serif;
     color: white;
-    font-size: 28px;
+    font-size: 25px;
     line-height: 40px;
     padding-top: 20px;
     letter-spacing: 2.2px;
     text-transform: uppercase;
 }
-
 .project-about{
     font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     color: white;
@@ -154,19 +153,19 @@
 }
 
 .link-for-more{
-    display: block;
-    width: 108px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
-    font-family: lato,sans-serif;
-    color: #fff;
-    font-size: 10px;
-    text-align: center;
-    letter-spacing: 3px;
-    text-decoration: none;
+    color: white;
+    width: fit-content;
+    font-size: 14px;
+    padding-top: 20px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
     cursor: pointer;
+    font-family: lato,sans-serif;
+    line-height: 32px;
+    font-weight: 300;
 }
 
 
@@ -179,7 +178,7 @@
     background-color: #74B3CE;
 }
 #Product-3{
-    background-color: #28231C;
+    background-color: #94ad82;
 }
 
 /* Responsive */
