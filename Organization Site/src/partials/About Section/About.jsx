@@ -21,7 +21,7 @@ function About() {
                         <img className="About-profile-icon" src={paProfile} alt="Pa Profile"/>
                         <div className="About-person">Yochanan Liebenberg</div>
                         <div className="About-profile-description">
-                            Entrepreneur and business mogul. Developed E-locate, Nexus, Tsitsikamma Mountain Reserve, Stone Wall Farm...
+                            Entrepreneur who founded several successful ventures including Worldwide Brochure Bank, Nexus Connections, e-locate, Tsitsikamma Mountain Reserve, and Stonewall Farm.
                         </div>
                     </div>
                     <div className="block stacked">

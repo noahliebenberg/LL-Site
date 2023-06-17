@@ -1,42 +1,50 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef  } from 'react';
 import './ProjectsSection.css';
 import turbineImage from '../../images/turbine.png';
 import carImage from '../../images/car.png';
 import wineImage from '../../images/wine-website.png';
 
 function ProjectsSection() {
+    const slider = useRef(null);
 
     useEffect(() => {
-        const slider = document.querySelector('.media-scroller');
-
         let isDown = false;
         let startX;
         let scrollLeft;
 
-        slider.addEventListener('mousedown', (e) => {
+        slider.current.addEventListener('mousedown', (e) => {
             isDown = true;
-            slider.classList.add('active');
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeft = slider.scrollLeft;
+            slider.current.classList.add('active');
+            startX = e.pageX - slider.current.offsetLeft;
+            scrollLeft = slider.current.scrollLeft;
         });
 
-        slider.addEventListener('mouseleave', () => {
+        slider.current.addEventListener('mouseleave', () => {
             isDown = false;
-            slider.classList.remove('active');
+            slider.current.classList.remove('active');
         });
 
-        slider.addEventListener('mouseup', () => {
+        slider.current.addEventListener('mouseup', () => {
             isDown = false;
-            slider.classList.remove('active');
+            slider.current.classList.remove('active');
         });
 
-        slider.addEventListener('mousemove', (e) => {
+        slider.current.addEventListener('mousemove', (e) => {
             if (!isDown) return;
             e.preventDefault();
-            const x = e.pageX - slider.offsetLeft;
+            const x = e.pageX - slider.current.offsetLeft;
             const walk = (x - startX) * 2; // adjust the speed of the drag
-            slider.scrollLeft = scrollLeft - walk;
+            slider.current.scrollLeft = scrollLeft - walk;
         });
+
+        const mediaElements = slider.current.querySelectorAll('.media-element');
+
+        mediaElements.forEach(element => {
+            element.addEventListener('click', () => {
+                element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            });
+        });
+
     }, []);
 
     return (
@@ -45,7 +53,7 @@ function ProjectsSection() {
                 <div className="project-section-title">Past <span className="grey"> projects </span></div>
             </div>
 
-            <section className="media-scroller snaps-inline">
+            <section ref={slider} className="media-scroller snaps-inline">
                 <div className="media-element" id="Product-2">
                     <div>
                         <div className="product-type">Desktop APPLICATION</div>
