@@ -206,3 +206,54 @@ img, picture, iframe {
         box-sizing: border-box; /* Include padding and border in element's total width and height */
     }
 }
+.contact-line{
+    display: grid;
+    height: 36px;
+    margin-bottom: 20px;
+}
+.contact-line-link{
+    display: flex;
+    height: 36px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100px;
+}
+.social-link{
+    padding-left: 10px;
+    font-family: lato,sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.contact-title{
+    width: 60px;
+    font-family: lato,sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contact-details{
+
+    font-size: 15px;
+    font-family: Monospace;
+}

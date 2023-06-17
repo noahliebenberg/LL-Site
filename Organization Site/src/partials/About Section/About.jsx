@@ -22,24 +22,37 @@ function About() {
                         altText="Pa Profile"
                         name="Yochanan Liebenberg"
                         description="Entrepreneur who founded several successful ventures including Worldwide Brochure Bank, Nexus Connections, e-locate, Tsitsikamma Mountain Reserve, and Stonewall Farm."
+                        phone="+447724604324"
+                        email="liebenbergyochanan@gmail.com"
+                        linkedin={"https://www.linkedin.com/in/yochanan-liebenberg-489653211"}
+
                     />
                     <ProfileCard
                         imgSrc={yochanan}
                         altText="Yochanan"
                         name="Yochanan Jnr Liebenberg"
                         description="I’m a recent Exeter University Computer Science Honours graduate currently completing a Masters in a data science at Swansea University."
+                        phone="+447502950173"
+                        email="yochananliebenberg@gmail.com"
+                        linkedin={"https://www.linkedin.com/in/yochanan-liebenberg-486944212/"}
                     />
                     <ProfileCard
                         imgSrc={noah}
                         altText="Noah"
                         name="Noah Liebenberg"
                         description="I’m a recent Exeter University Computer Science Honours graduate currently completing a Masters in a data science at Swansea University."
+                        phone="+4407526226401"
+                        email="noahliebenberg7@gmail.com"
+                        linkedin={"https://www.linkedin.com/in/noahliebenberg/"}
                     />
                     <ProfileCard
                         imgSrc={benjamin}
                         altText="Benjamin"
                         name="Benjamin Liebenberg"
                         description="Working currently as an in-house paralegal for the Vice-Chancellor’s Office at Swansea University. Capital Law Ltd."
+                        phone="+447763639508"
+                        email="benjaminliebenberg7@gmail.com"
+                        linkedin={"https://www.linkedin.com/in/benjamin-liebenberg-722048172/"}
                     />
                 </div>
             </div>
