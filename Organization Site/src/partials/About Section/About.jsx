@@ -3,7 +3,7 @@ import ProfileCard from './ProfileCard'; // import the new component at the top
 import './About.css';
 
 import paProfile from '../../images/PaProfile.jpg';
-import yochanan from '../../images/Yochanan.jpg';
+import yochanan from '../../images/Yochanan.jpeg';
 import noah from '../../images/Noah.jpg';
 import benjamin from '../../images/Benjamin.png';
 function About() {
