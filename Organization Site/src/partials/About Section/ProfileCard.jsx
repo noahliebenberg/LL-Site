@@ -5,18 +5,9 @@ import styles from './ProfileCard.module.css';
 class ProfileCard extends Component {
     constructor() {
         super();
-        this.state = {
-            isFlipped: false
-        };
         this.frontCard = createRef();
         this.backCard = createRef();
-        this.handleClick = this.handleClick.bind(this);
-        this.setCardDimensions = this.setCardDimensions.bind(this);  // Bind this function to use it in img onLoad event
-    }
-
-    handleClick(e) {
-        e.preventDefault();
-        this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+        this.setCardDimensions = this.setCardDimensions.bind(this);
     }
 
     componentDidMount() {
@@ -36,23 +27,40 @@ class ProfileCard extends Component {
     }
 
     render() {
-        const {imgSrc, altText, name, description} = this.props;
+        const {imgSrc, altText, name, description, isFlipped, onClick, phone, email, linkedin} = this.props;
         return (
-            <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
-                <div className={styles.block} onClick={this.handleClick} ref={this.frontCard}>
+            <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+                <div className={styles.block} onClick={onClick} ref={this.frontCard}>
                     <img className={styles.icon} src={imgSrc} alt={altText} onLoad={this.setCardDimensions} />
                     <div className={styles.name}>{name}</div>
                     <div className={styles.description}>{description}</div>
                 </div>
 
-                <div className={styles.block} onClick={this.handleClick} ref={this.backCard}>
-                    <div className={styles.name}>{name}</div>
-                    <div className={styles.description}>This is the back of the card. Please replace this with your back content.</div>
+                <div className={styles.block} onClick={onClick} ref={this.backCard}>
+                    <ul>
+                        <div className="contact-line">
+                            <li className="contact-title">Email</li>
+                            <li className="contact-details">{email}</li>
+                        </div>
+                        <div className="contact-line">
+                            <li className="contact-title">Phone</li>
+                            <li className="contact-details">{phone}</li>
+                        </div>
+
+
+                        {/* Social links */}
+                        <div className="contact-line">
+                            <a href={linkedin} target="_blank" className="contact-line-link">
+                                <img src="https://uploads-ssl.webflow.com/602e7c287eefab52cb3f36dd/602ec3d193cf5ffb77ae7e12_LinkedIN.png" loading="lazy" alt="Imaginary Cloud Linkedin "></img>
+                                <div className="social-link">LINKEDIN</div>
+                            </a>
+                        </div>
+
+                    </ul>
                 </div>
             </ReactCardFlip>
         )
     }
 }
-
 
 export default ProfileCard;

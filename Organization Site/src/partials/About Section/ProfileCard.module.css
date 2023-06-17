@@ -11,7 +11,9 @@
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .2);
-    margin: 1rem auto; /* Ensure blocks are centered by adding automatic horizontal margins */
+    /* Ensure blocks are centered by adding automatic horizontal margins */
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 .icon, .name, .description {
@@ -46,3 +48,4 @@
     letter-spacing: -0.022em;
     text-align: center;
 }
+
