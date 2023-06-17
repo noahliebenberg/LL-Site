@@ -65,7 +65,7 @@
     font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 28px;
     font-weight: 600;
-    background: -webkit-linear-gradient(20deg, #057aff, #a5d6ff, #aff5b4);
+    background: -webkit-linear-gradient(20deg, #94ad82, #ffff, #CFE0C3);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -84,13 +84,13 @@
 
     box-shadow:
             inset 0 0 50px #fff,
-            inset 20px 0 80px #aff5b4,
-            inset -20px 0 80px #057aff,
-            inset 20px 0 300px #aff5b4,
-            inset -20px 0 300px #057aff,
+            inset 20px 0 80px #CFE0C3,
+            inset -20px 0 80px #99A98D,
+            inset 20px 0 300px #CFE0C3,
+            inset -20px 0 300px #99A98D,
             0 0 10px #fff,
-            -10px 0 80px #aff5b4,
-            10px 0 80px #057aff;
+            -10px 0 80px #CFE0C3,
+            10px 0 80px #99A98D;
 }
 
 /* Responsive */

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './FeaturedSection.css';
-import featuredImage from '../../images/RealTalkGPT.png';
+import featuredImage from '../../images/AutoSage.png';
 
 function FeaturedSection() {
     return (
