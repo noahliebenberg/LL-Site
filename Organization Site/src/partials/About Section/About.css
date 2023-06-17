@@ -49,7 +49,6 @@ img, picture, iframe {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr ));
     gap: 2rem;
     position: relative; /* Set position to relative to make the blocks absolute positioned */
-    overflow: hidden;
 
 }
 
@@ -59,11 +58,7 @@ img, picture, iframe {
     border-radius: 15px;
     box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .2);
 }
-.block:hover {
-    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .38);
-    transform: scale(1.03);
-    cursor: pointer;
-}
+
 .About-person{
     font-size: 20px;
     font-family: "larken", sans-serif;
@@ -186,3 +181,28 @@ img, picture, iframe {
 
 }
 
+@media (max-width: 576px) {
+    /* Styles for small screens */
+    .About-section {
+        padding: 0 1rem;
+        flex-direction: column;
+    }
+    .About-left-text{
+        padding: 0rem 0;
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+    .About-blocks-container{
+        padding: 0rem 0rem;
+        gap: 1rem;
+        justify-content: center; /* Center the blocks horizontally */
+        align-items: center; /* Center the blocks vertically */
+    }
+    .About-title{
+        text-align: center;
+    }
+    .block{
+        margin: 1rem auto; /* Ensure blocks are centered by adding automatic horizontal margins */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
+}

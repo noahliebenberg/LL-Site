@@ -1,0 +1,48 @@
+/* ProfileCard.module.css */
+.block {
+    width: 100%; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .2);
+    margin: 1rem auto; /* Ensure blocks are centered by adding automatic horizontal margins */
+}
+
+.icon, .name, .description {
+    width: 100%; /* Adjust as needed */
+}
+
+.icon {
+    max-height: 8rem;
+    background-color: white;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    border-radius: 200px;
+    justify-self: center;
+}
+
+.name {
+    font-size: 20px;
+    font-family: "larken", sans-serif;
+    line-height: 1.14286;
+    font-weight: 600;
+    text-align: center;
+}
+
+.description {
+    padding: 20px;
+    font-weight: 400;
+    color: black;
+    font-size: 14px;
+    letter-spacing: -0.022em;
+    text-align: center;
+}

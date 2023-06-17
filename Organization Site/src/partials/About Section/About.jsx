@@ -1,10 +1,11 @@
 import React, { useRef, useEffect } from 'react';
+import ProfileCard from './ProfileCard'; // import the new component at the top
 import './About.css';
+
 import paProfile from '../../images/PaProfile.jpg';
 import yochanan from '../../images/Yochanan.jpg';
 import noah from '../../images/Noah.jpg';
 import benjamin from '../../images/Benjamin.png';
-
 function About() {
     return (
         <section className="About-section" id="About">
@@ -17,34 +18,30 @@ function About() {
             </div>
             <div className="About-right-icons">
                 <div className="About-blocks-container">
-                    <div className="block stacked">
-                        <img className="About-profile-icon" src={paProfile} alt="Pa Profile"/>
-                        <div className="About-person">Yochanan Liebenberg</div>
-                        <div className="About-profile-description">
-                            Entrepreneur and business mogul. Developed E-locate, Nexus, Tsitsikamma Mountain Reserve, Stone Wall Farm...
-                        </div>
-                    </div>
-                    <div className="block stacked">
-                        <img className="About-profile-icon" src={yochanan} alt="Yochanan"/>
-                        <div className="About-person">Yochanan Jnr Liebenberg</div>
-                        <div className="About-profile-description">
-                            I’m a recent Exeter University Computer Science Honours graduate currently completing a Masters in a data science at Swansea University.
-                        </div>
-                    </div>
-                    <div className="block stacked">
-                        <img className="About-profile-icon" src={noah} alt="Noah"/>
-                        <div className="About-person">Noah Liebenberg</div>
-                        <div className="About-profile-description">
-                            I’m a recent Exeter University Computer Science Honours graduate currently completing a Masters in a data science at Swansea University.
-                        </div>
-                    </div>
-                    <div className="block stacked">
-                        <img className="About-profile-icon" src={benjamin} alt="Benjamin"/>
-                        <div className="About-person">Benjamin Liebenberg</div>
-                        <div className="About-profile-description">
-                            Working currently as an in-house paralegal for the Vice-Chancellor’s Office at Swansea University. Training contract commencing September 2023 with Capital Law Ltd.
-                        </div>
-                    </div>
+                    <ProfileCard
+                        imgSrc={paProfile}
+                        altText="Pa Profile"
+                        name="Yochanan Liebenberg"
+                        description="Entrepreneur and business mogul. Developed E-locate, Nexus, Tsitsikamma Mountain Reserve, Stone Wall Farm..."
+                    />
+                    <ProfileCard
+                        imgSrc={yochanan}
+                        altText="Yochanan"
+                        name="Yochanan Jnr Liebenberg"
+                        description="I’m a recent Exeter University Computer Science Honours graduate currently completing a Masters in a data science at Swansea University."
+                    />
+                    <ProfileCard
+                        imgSrc={noah}
+                        altText="Noah"
+                        name="Noah Liebenberg"
+                        description="I’m a recent Exeter University Computer Science Honours graduate currently completing a Masters in a data science at Swansea University."
+                    />
+                    <ProfileCard
+                        imgSrc={benjamin}
+                        altText="Benjamin"
+                        name="Benjamin Liebenberg"
+                        description="Working currently as an in-house paralegal for the Vice-Chancellor’s Office at Swansea University. Capital Law Ltd."
+                    />
                 </div>
             </div>
         </section>
