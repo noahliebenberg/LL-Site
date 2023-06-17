@@ -6,19 +6,17 @@
     position: relative;
     overflow: hidden;
     background-color: #ffffff; /* Add this line to set the background color */
-
 }
 
 
 .Main-Title {
     color: #3A4856;
-    font-size: 100px;
+    font-size: 70px;
     position: relative;
     top: 30%;
     letter-spacing: 15px;
     padding-left: 20px;
 
-    font-family: "larken", sans-serif;
     font-style: normal;
     line-height: 80px;
     z-index: 100;
@@ -29,8 +27,6 @@
 .Main-Title-smaller{
     letter-spacing: 20px;
     padding-bottom: 10px;
-
-    text-transform: lowercase;
     text-align: center;
 
 
@@ -66,7 +62,7 @@
 /* Smaller desktop */
 @media (max-width: 1500px) {
     .Main-Title{
-        font-size: 40px;
+        font-size: 50px;
     }
     .Main-Slogan{
         font-size: 25px;
