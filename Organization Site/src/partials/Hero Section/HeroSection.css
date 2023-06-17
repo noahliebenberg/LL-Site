@@ -28,9 +28,12 @@
     letter-spacing: 20px;
     padding-bottom: 10px;
     text-align: center;
-
-
 }
+.lieben{
+    letter-spacing: 5px;
+}
+
+
 .Video-background{
     z-index: 1;
     height: 100%;

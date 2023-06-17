@@ -24,6 +24,15 @@
     color: white;
     z-index: 2;
 }
+.featured-left-title2{
+    font-size: 20px;
+    font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+    padding-top: 15px;
+    line-height: 1;
+    color: #94ad82;
+    z-index: 2;
+}
 .featured-left-text{
     font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     color: white;
@@ -65,7 +74,7 @@
     font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 28px;
     font-weight: 600;
-    background: -webkit-linear-gradient(20deg, #94ad82, #ffff, #CFE0C3);
+    background: -webkit-linear-gradient(20deg, #94ad82, #bbe5bb, #CFE0C3);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -111,6 +120,9 @@
     .featured-left-title{
         text-align: center;
     }
+    .featured-left-title2{
+        text-align: center;
+    }
     .featured-left-text{
         text-align: center;
     }
@@ -152,6 +164,9 @@
         display: flex;
     }
     .featured-left-title{
+        text-align: left;
+    }
+    .featured-left-title2{
         text-align: left;
     }
     .featured-left-text{

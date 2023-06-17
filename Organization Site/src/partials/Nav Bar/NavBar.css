@@ -44,13 +44,12 @@
     text-decoration: none;
     color: black;
     font-size: 15px;
-    font-family: "larken", sans-serif;
     letter-spacing: 2px;
     padding: 0rem 2rem;
     position: relative;
 }
 .NavBar ul li a:hover {
-    color: #06c;
+    color: #9EADBD;
 }
 .hide{
     display: none;
