@@ -10,17 +10,22 @@ function Footer() {
       <div className="bottom-strip-container">
         <div className="title">EXPERIANCED IN:</div>
         <ul>
-
-
+            <div className="icon-title">Entrepreneurship</div>
             <div className="icon-title">React Native</div>
+            <div className="icon-title">Contract Law</div>
             <div className="icon-title">Python</div>
+            <div className="icon-title">Startups</div>
             <div className="icon-title">C#</div>
+            <div className="icon-title">Legal Compliance</div>
             <div className="icon-title">CSS</div>
+            <div className="icon-title">Business Development</div>
             <div className="icon-title">React</div>
             <div className="icon-title">Java</div>
-            <div className="icon-title">vue</div>
-
-
+            <div className="icon-title">Strategic Planning</div>
+            <div className="icon-title">Vue</div>
+            <div className="icon-title">Product Management</div>
+            <div className="icon-title">Leadership</div>
+            <div className="icon-title">Data Analysis</div>
         </ul>
       </div>
 

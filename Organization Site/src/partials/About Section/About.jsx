@@ -11,10 +11,9 @@ function About() {
         <section className="About-section" id="About">
             <div className="About-left-text">
                 <div className="About-title"><h1>About<span className="grey"> us </span></h1></div>
-                <div className="About-text">As a team, we are a group of three professionals with diverse backgrounds and expertise. Our skills cover various areas including computer science, data science, and law. We are passionate about continuous learning and tackling complex challenges, and are committed to delivering solutions that are data-driven. Our team consists of a Computer Science Honours graduate and Master's candidate in Data Science specializing in Machine Learning, a Computer Science Honours graduate with expertise in C#, Python, and JavaScript, and a first-class honours LLB graduate studying law at Swansea University.
-                </div>
-                <div className="About-text">Together, we bring a wealth of knowledge and experience to any project we undertake. We work collaboratively to leverage our diverse skill sets to achieve our goals, with a shared commitment to excellence. We are enthusiastic, dedicated, and bring a high level of professionalism to our work, making us a valuable asset to any organization. We are excited about the opportunities that come our way, and we are always looking for new challenges to take on.
-                </div>
+
+                <div className="About-text">Our team is an assembly of four professionals with diverse backgrounds and expertise. Our skills encompass various fields including computer science, data science, law, and entrepreneurship. We are passionate about continuous learning, tackling complex challenges, and are committed to delivering data-driven solutions. The team is composed of a Computer Science Honours graduate and Master's candidate in Data Science specializing in Machine Learning, a Computer Science Honours graduate with expertise in C#, Python, and JavaScript, a first-class honours LLB graduate studying law at Swansea University, and an accomplished Entrepreneur who founded several successful ventures including Worldwide Brochure Bank, Nexus Connections, e-locate, Tsitsikamma Mountain Reserve, and Stonewall Farm.                </div>
+                <div className="About-text">Together, we bring an extensive wealth of knowledge and experience to any project we undertake. We collaborate effectively to harness our diverse skill sets to reach our objectives, unified in our commitment to excellence. We are enthusiastic, dedicated, and maintain a high degree of professionalism in our work, positioning us as a valuable asset to any organization. The opportunities that cross our paths ignite our excitement, and we constantly seek new challenges to undertake.                </div>
             </div>
             <div className="About-right-icons">
                 <div className="About-blocks-container">
@@ -22,7 +21,7 @@ function About() {
                         imgSrc={paProfile}
                         altText="Pa Profile"
                         name="Yochanan Liebenberg"
-                        description="Entrepreneur and business mogul. Developed E-locate, Nexus, Tsitsikamma Mountain Reserve, Stone Wall Farm..."
+                        description="Entrepreneur who founded several successful ventures including Worldwide Brochure Bank, Nexus Connections, e-locate, Tsitsikamma Mountain Reserve, and Stonewall Farm."
                     />
                     <ProfileCard
                         imgSrc={yochanan}
