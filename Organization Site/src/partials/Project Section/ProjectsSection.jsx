@@ -56,15 +56,15 @@ function ProjectsSection() {
             </div>
 
             <section ref={slider} className="media-scroller snaps-inline">
-                <div className="media-element" id="Product-2">
+                <div className="media-element" id="Product-1">
                     <div>
-                        <div className="product-type">Desktop APPLICATION</div>
-                        <div className="product-title">Turbine Damage Detector</div>
-                        <div className="project-about">Developed a Python application to process wind turbine images and locate damage to be flagged for the user.</div>
-                        <div className="link-for-more"><Link to="/turbine">More Details</Link></div>
+                        <div className="product-type">WEB APPLICATION</div>
+                        <div className="product-title">WINE ART</div>
+                        <div className="project-about">A project developed with Express, Node JS and deployed using Google cloud services. Get your portrait done in your favorite wine by simply uploading a picture. Transform Your Photos into Works of Art </div>
+                        <div className="link-for-more"><Link to="/wine">More Details</Link></div>
                     </div>
                     <div className="project-logo align-right">
-                        <img className="img-product" src={turbineImage} alt="Turbine" />
+                        <img className="img-product" src={wineImage} alt="Wine" />
                     </div>
                 </div>
 
@@ -80,15 +80,15 @@ function ProjectsSection() {
                     </div>
                 </div>
 
-                <div className="media-element" id="Product-1">
+                <div className="media-element" id="Product-2">
                     <div>
-                        <div className="product-type">WEB APPLICATION</div>
-                        <div className="product-title">WINE ART</div>
-                        <div className="project-about">A project developed with Express, Node JS and deployed using Google cloud services. Get your portrait done in your favorite wine by simply uploading a picture. Transform Your Photos into Works of Art </div>
-                        <div className="link-for-more"><Link to="/wine">More Details</Link></div>
+                        <div className="product-type">Desktop APPLICATION</div>
+                        <div className="product-title">Turbine Damage Detector</div>
+                        <div className="project-about">Developed a Python application to process wind turbine images and locate damage to be flagged for the user.</div>
+                        <div className="link-for-more"><Link to="/turbine">More Details</Link></div>
                     </div>
                     <div className="project-logo align-right">
-                        <img className="img-product" src={wineImage} alt="Wine" />
+                        <img className="img-product" src={turbineImage} alt="Turbine" />
                     </div>
                 </div>
 
