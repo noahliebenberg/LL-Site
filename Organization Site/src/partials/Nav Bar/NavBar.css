@@ -92,6 +92,7 @@
     opacity: 95%;
     width: 100vw;
     height: 100vh;
+
 }
 
 .links-dropdown{
@@ -99,9 +100,13 @@
     display: grid;
     background-color: white;
     opacity: 95%;
-
-
+    width: 60vw;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.2);
+    float: right;
 }
+
+
+
 .drop-link{
     font-size: 38px;
     line-height: 1.1428571429;
@@ -112,9 +117,13 @@
     text-align: left;
 
 }
+.drop-link:active {
+    color: #96a2b2;
+    transform: scale(0.95);
+}
+
 .dropdown-menu.show {
     display: contents;
-
 }
 
 /* Responsive */
@@ -131,11 +140,10 @@
         padding: 1.5rem;
     }
     .drop-link{
-        font-size: 30px;
+        font-size: 20px;
         line-height: 1.1428571429;
         font-weight: 500;
         letter-spacing: .007em;
-        font-family: "larken", sans-serif;
         padding: 0.6rem 0rem;
         text-align: left;
 
@@ -144,67 +152,4 @@
 }
 
 
-/* Mobile Nav Bar */
-
-.Mobile-NavBar{
-    visibility: hidden;
-
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    bottom: 0;
-    z-index: 200;
-    filter: drop-shadow(5px 5px 10px #44444d81);
-    border-radius: 10px 10px 0px 0px;
-}
-.Mobile-NavBar ul {
-    list-style: none;
-    background: rgba(0,0,0,0);
-    overflow: hidden;
-    color: black;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    transition: 1s;
-    height: 70px;
-    display: flex;
-    border-radius: 10px 10px 0px 0px;
-}
-.Mobile-NavBar ul li{
-    padding: 15px;
-    letter-spacing: 2px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-
-
-
-.Mobile-NavBar ul li a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-family: "larken", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    padding: 10px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.Mobile-NavBar ul li:hover {
-    background-color: lightgray;
-}
-
-.nav-mobile-icon{
-    object-fit: cover;
-    max-height: 30px;
-    max-width: 30px;
-}
 
