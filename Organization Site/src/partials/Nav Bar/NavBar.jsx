@@ -1,26 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './NavBar.css'
 
 function NavBar() {
-
-    // mobile version responsive code
-    const NavBar = document.querySelector('.NavBar');
-    const MobileNavBar = document.querySelector('.Mobile-NavBar');
-
-    // Sticky Nav bar code
-    const nav = document.querySelector("nav");
-    let lastScrollY = window.scrollY;
-    window.addEventListener("scroll", () => {
-        closeMenuOnScroll();
-        if (lastScrollY < window.scrollY) {
-            nav.classList.add("hide");
-        } else {
-            nav.classList.remove("hide");
-        }
-        lastScrollY = window.scrollY;
-    });
     // State variable to track whether menu is open or closed
     const [menuOpen, setMenuOpen] = useState(false);
+    const menuRef = useRef();  // Create a ref for the dropdown menu
 
     // Function to toggle menu state
     const toggleMenu = () => {
@@ -34,8 +18,46 @@ function NavBar() {
         }
     }
 
-    return (
+    useEffect(() => {
+        let lastScrollY = window.scrollY;
+        const handleScroll = () => {
+            const nav = document.querySelector("nav");
+            closeMenuOnScroll();
+            if (window.scrollY > 100) {  // Change "100" to whatever threshold you want
+                if (lastScrollY < window.scrollY) {
+                    nav.classList.add("hide");
+                } else {
+                    nav.classList.remove("hide");
+                }
+            } else {
+                nav.classList.remove("hide");
+            }
+            lastScrollY = window.scrollY;
+        };
 
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [menuOpen]);
+
+    // Function to close the menu when clicking outside of it
+    useEffect(() => {
+        const handleClickOutside = event => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setMenuOpen(false);
+            }
+        };
+
+        // Attach the listeners on component mount.
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            // Detach the listeners on component unmount.
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [menuOpen]);
+
+    return (
         <div>
             <nav className={`NavBar ${menuOpen ? "menu-open" : ""}`}>
                 <div className="Logo">
@@ -50,21 +72,17 @@ function NavBar() {
                 </ul>
                 <ul>
                     <button className="menu-button" onClick={toggleMenu}>Menu</button>
-
                 </ul>
 
-                <div className={`dropdown-menu ${menuOpen ? "show" : ""}`}>
+                <div className={`dropdown-menu ${menuOpen ? "show" : ""}`} ref={menuRef}>
                     <div className="links-dropdown">
                         <button className="drop-link"><a href="#Featured">Upcoming Projects</a></button>
                         <button className="drop-link"><a href="#About">About</a></button>
                         <button className="drop-link"><a href="#Portfolio">Portfolio</a></button>
                         <button className="drop-link"><a href="#Contact">Contact Us</a></button>
                     </div>
-
                 </div>
-
             </nav>
-
         </div>
     );
 }
