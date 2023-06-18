@@ -11,6 +11,7 @@ function NavBar() {
     const nav = document.querySelector("nav");
     let lastScrollY = window.scrollY;
     window.addEventListener("scroll", () => {
+        closeMenuOnScroll();
         if (lastScrollY < window.scrollY) {
             nav.classList.add("hide");
         } else {
@@ -24,6 +25,13 @@ function NavBar() {
     // Function to toggle menu state
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+    }
+
+    // Added this function to close the menu on scroll
+    const closeMenuOnScroll = () => {
+        if (window.innerWidth <= 1400 && menuOpen) {
+            setMenuOpen(false);
+        }
     }
 
     return (
