@@ -10,7 +10,7 @@
     font-family: "larken", sans-serif;
     padding-left: 13rem;
     position: relative;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
 }
 .Contact-title{
     font-size: 28px;
@@ -50,6 +50,6 @@
         font-family: "larken", sans-serif;
         padding-left: 1.5rem;
         position: relative;
-        padding-bottom: 3rem;
+        padding-bottom: 1.5rem;
     }
 }
