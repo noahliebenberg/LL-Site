@@ -103,6 +103,7 @@
     width: 60vw;
     box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.2);
     float: right;
+    border-radius: 0px 0px 10px 10px;
 }
 
 
@@ -115,6 +116,7 @@
     font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     padding: .6rem 0rem;
     text-align: left;
+
 
 }
 .drop-link:active {
