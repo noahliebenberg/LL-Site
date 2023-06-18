@@ -1,7 +1,39 @@
 .WinePage{
     background-color: #724345;
-    height: 100vh;
+    height: auto;
     Width: 100vw;
+}
+.WineArt-title{
+    font-family: "larken", sans-serif;
+    color: white;
+    font-size: 60px;
+    line-height: 40px;
+    padding-top: 20px;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.WineArt-type{
+    font-family: lato,sans-serif;
+    color: lightgray;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.left-title{
+    font-size: 28px;
+    font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+    padding-top: 4rem;
+    z-index: 2;
+}
+.second-title-color{
+    color: #6e6e73;
 }
 
 .AutoSagePage{
@@ -9,9 +41,15 @@
     height: 100vh;
     Width: 100vw;
 }
-
 .TurbinePage{
     background-color: #74B3CE;
     height: 100vh;
     Width: 100vw;
 }
+
+
+.main-container{
+    margin: 13rem 0;
+    padding: 0 13rem;
+}
+
