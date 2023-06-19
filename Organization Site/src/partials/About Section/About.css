@@ -77,11 +77,8 @@ img, picture, iframe {
     object-fit: contain;
     border-radius: 200px;
     justify-self: center;
-
-
 }
 .About-profile-description{
-
     padding: 20px;
     font-weight: 400;
     color: black;
@@ -116,8 +113,6 @@ img, picture, iframe {
     .block{
         margin: 1rem;
     }
-
-
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -161,8 +156,6 @@ img, picture, iframe {
     }
     .About-blocks-container{
         padding: 8rem 1.5rem;
-
-
     }
 }
 
@@ -177,10 +170,7 @@ img, picture, iframe {
     }
     .About-blocks-container{
         padding: 8rem 1.5rem;
-
-
     }
-
 }
 
 @media (max-width: 576px) {
@@ -260,7 +250,6 @@ img, picture, iframe {
 }
 
 .contact-details{
-
     font-size: 15px;
     font-family: Monospace;
 }
