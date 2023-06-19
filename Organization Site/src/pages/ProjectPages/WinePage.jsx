@@ -23,13 +23,11 @@ const WinePage = () => {
                             <div className="left-title-details"><h1>Details</h1></div>
 
                             <div className="tab-panel">
-                                <div>
-                                    <input type="radio" name="slider" id="overview"/>
+                                    <input type="radio" name="slider" id="overview" checked/>
                                     <input type="radio" name="slider" id="tech"/>
-                                    <input type="radio" name="slider" id="development"/>
+                                    <input type="radio" name="slider" id="deployment"/>
                                     <input type="radio" name="slider" id="security"/>
                                     <input type="radio" name="slider" id="legal"/>
-                                </div>
 
                                 <nav>
                                     <label for="overview" className="overview">Overview</label>
@@ -37,6 +35,7 @@ const WinePage = () => {
                                     <label for="deployment" className="deployment">Deployment</label>
                                     <label for="security" className="security">Security</label>
                                     <label for="legal" className="legal">Legal compliance</label>
+                                    <div className="slider"></div>
                                 </nav>
 
                             </div>

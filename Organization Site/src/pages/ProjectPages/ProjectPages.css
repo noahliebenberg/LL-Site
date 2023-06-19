@@ -73,16 +73,50 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 5rem;
+}
+.main-container nav{
+    display: flex;
+    flex-direction: row;
+
+    content: "";
+    background: white;
+    width: 100%;
+    height: 1px;
+    filter: blur(0.3px);
 }
 
+.main-container nav::after{
+    width: 100%;
+    color: silver;
+    height: 1px;
+}
 
+.main-container nav label{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 
+}
+#overview:checked ~ nav label .overview,
+#overview:checked ~ nav label .tech,
+#overview:checked ~ nav label .deployment,
+#overview:checked ~ nav label .security,
+#overview:checked ~ nav label .legal{
+    color: #724345;
+}
 
-
-
-
-
-
+input[type='radio']{
+    display: none;
+}
+.main-container nav slider{
+    position: absolute;
+}
 
 
 /* Other page css */
