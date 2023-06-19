@@ -27,12 +27,13 @@ class ProfileCard extends Component {
     }
 
     render() {
-        const {imgSrc, altText, name, description, isFlipped, onClick, phone, email, linkedin} = this.props;
+        const {imgSrc, altText, name, description, isFlipped, onClick, phone, email, linkedin, role} = this.props;
         return (
             <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
                 <div className={styles.block} onClick={onClick} ref={this.frontCard}>
                     <img className={styles.icon} src={imgSrc} alt={altText} onLoad={this.setCardDimensions} />
                     <div className={styles.name}>{name}</div>
+                    <div className={styles.role}>{role}</div>
                     <div className={styles.description}>{description}</div>
                 </div>
 

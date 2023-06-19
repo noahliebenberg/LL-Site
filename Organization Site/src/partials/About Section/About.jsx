@@ -44,6 +44,7 @@ class About extends Component {
                             phone="+447724604324"
                             email="liebenbergyochanan@gmail.com"
                             linkedin={"https://www.linkedin.com/in/yochanan-liebenberg-489653211"}
+                            role="Director"
                         />
                         <ProfileCard
                             imgSrc={yochanan}
@@ -55,6 +56,7 @@ class About extends Component {
                             phone="+447502950173"
                             email="yochananliebenberg@gmail.com"
                             linkedin={"https://www.linkedin.com/in/yochanan-liebenberg-486944212/"}
+                            role="Data Scientist"
                         />
                         <ProfileCard
                             imgSrc={noah}
@@ -66,6 +68,7 @@ class About extends Component {
                             phone="+4407526226401"
                             email="noahliebenberg7@gmail.com"
                             linkedin={"https://www.linkedin.com/in/noahliebenberg/"}
+                            role="Software Engineer"
                         />
                         <ProfileCard
                             imgSrc={benjamin}
@@ -77,6 +80,7 @@ class About extends Component {
                             phone="+447763639508"
                             email="benjaminliebenberg7@gmail.com"
                             linkedin={"https://www.linkedin.com/in/benjamin-liebenberg-722048172/"}
+                            role="Legal Advisor"
                         />
                     </div>
                 </div>

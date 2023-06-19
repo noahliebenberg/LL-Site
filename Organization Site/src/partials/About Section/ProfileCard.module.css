@@ -42,6 +42,15 @@
     text-align: center;
 }
 
+.role {
+    font-size: 12px;
+    font-family: "larken", sans-serif;
+    line-height: 1.14286;
+    font-weight: 600;
+    text-align: center;
+    color: #3A4856;
+}
+
 .description {
     padding: 20px;
     font-weight: 400;

@@ -23,18 +23,69 @@
     text-transform: uppercase;
     text-align: center;
 }
-.left-title{
+.Client-feedback-section {
+    padding-top: 7rem;
+    margin: auto;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.Details-panel-section {
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #724345;
+}
+
+.left-title-details{
     font-size: 28px;
     font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-weight: 600;
     line-height: 1;
     color: white;
-    padding-top: 4rem;
+    padding: 2rem;
+    z-index: 2;
+}
+.left-title-feedback{
+    display: inline;
+    font-size: 28px;
+    font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.96);
+    padding: 2rem;
     z-index: 2;
 }
 .second-title-color{
     color: #6e6e73;
 }
+
+.tab-panel {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .4);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Other page css */
 
 .AutoSagePage{
     background-color: #94ad82;
@@ -49,7 +100,7 @@
 
 
 .main-container{
-    margin: 13rem 0;
+    margin: 5rem 0;
     padding: 0 13rem;
 }
 
