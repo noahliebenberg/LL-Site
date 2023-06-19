@@ -210,7 +210,6 @@
 @media (min-width: 577px) and (max-width: 768px) {
     /* Styles for medium screens */
     .projects-section {
-        padding: 0 3rem;
         flex-direction: column;
     }
     .project-section-text{
@@ -236,7 +235,6 @@
 @media (min-width: 769px) and (max-width: 992px) {
     /* Styles for large screens */
     .projects-section {
-        padding: 0 3rem;
         flex-direction: column;
     }
     .project-section-text{
@@ -262,7 +260,6 @@
 @media (min-width: 993px) and (max-width: 1200px) {
     /* Styles for extra-large screens */
     .projects-section {
-        padding: 0 3rem;
         flex-direction: column;
     }
     .project-section-text{
@@ -288,7 +285,6 @@
 @media (min-width: 1201px) and (max-width: 1450px) {
     /* Styles for extra-extra-large screens */
     .projects-section {
-        padding: 0 3rem;
         flex-direction: column;
     }
     .project-section-text{

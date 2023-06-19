@@ -50,7 +50,6 @@ img, picture, iframe {
     gap: 2rem;
     position: relative; /* Set position to relative to make the blocks absolute positioned */
     margin-top: 5rem;
-
 }
 
 .block{
@@ -232,6 +231,10 @@ img, picture, iframe {
     text-decoration: none;
     width: 100px;
 }
+.contact-line-link img{
+    user-select: none;
+}
+
 .social-link{
     padding-left: 10px;
     font-family: lato,sans-serif;

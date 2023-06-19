@@ -5,7 +5,7 @@ function NavBar() {
     // State variable to track whether menu is open or closed
     const [menuOpen, setMenuOpen] = useState(false);
     const menuRef = useRef();  // Create a ref for the dropdown menu
-
+    const buttonRef = useRef();
     // Function to toggle menu state
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -44,7 +44,7 @@ function NavBar() {
     // Function to close the menu when clicking outside of it
     useEffect(() => {
         const handleClickOutside = event => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
+            if (menuRef.current && !menuRef.current.contains(event.target) && !buttonRef.current.contains(event.target)) {
                 setMenuOpen(false);
             }
         };
@@ -71,7 +71,7 @@ function NavBar() {
                     <li><a href="#Contact">Contact Us</a></li>
                 </ul>
                 <ul>
-                    <button className="menu-button" onClick={toggleMenu}>Menu</button>
+                    <button className="menu-button" onClick={toggleMenu} ref={buttonRef}>Menu</button>
                 </ul>
 
                 <div className={`dropdown-menu ${menuOpen ? "show" : ""}`} ref={menuRef}>

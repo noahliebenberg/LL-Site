@@ -101,10 +101,12 @@
     background-color: white;
     opacity: 95%;
     width: 60vw;
+    max-width: 250px;
     box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.2);
     float: right;
     border-radius: 0px 0px 10px 10px;
 }
+
 
 
 
@@ -116,9 +118,12 @@
     font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     padding: .6rem 0rem;
     text-align: left;
-
-
+    display: flex;
 }
+.drop-link a{
+    width: 100%;
+}
+
 .drop-link:active {
     color: #96a2b2;
     transform: scale(0.95);
