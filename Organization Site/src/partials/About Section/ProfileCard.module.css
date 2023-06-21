@@ -10,8 +10,9 @@
     border-radius: 15px;
     box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .2);
     padding: 0rem 1.5rem;
-
+    padding-top: 15px;
 }
+
 .profile-card-top{
     top: 0;
     display: flex;
