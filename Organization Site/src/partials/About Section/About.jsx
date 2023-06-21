@@ -23,14 +23,16 @@ class About extends Component {
 
     render() {
         return (
-            <section className="About-section" id="About">
+            <section className="About-section main-container" id="About">
                 <div className="About-left-text">
                     <div className="About-title"><h1>About<span className="grey"> us </span></h1></div>
+
                     <div className="About-text">
-                        Our team is an assembly of four professionals with diverse backgrounds and expertise. Our skills encompass various fields including computer science, data science, law, and entrepreneurship. We are passionate about continuous learning, tackling complex challenges, and are committed to delivering data-driven solutions. The team is composed of a Computer Science Honours graduate and Master's candidate in Data Science specializing in Machine Learning, a Computer Science Honours graduate with expertise in C#, Python, and JavaScript, a first-class honours LLB graduate studying law at Swansea University, and an accomplished Entrepreneur who founded several successful ventures including Worldwide Brochure Bank, Nexus Connections, e-locate, Tsitsikamma Mountain Reserve, and Stonewall Farm.
+                        Our dynamic team of four has a wide spectrum of expertise in computer science, data science, law, and entrepreneurship, including specialization in machine learning, proficiency in C#, Python, and JavaScript, law study at Swansea University, and successful entrepreneurship. United by our passion for learning and problem-solving, we deliver data-driven solutions with professionalism and dedication.
                     </div>
                     <div className="About-text">
-                        Together, we bring an extensive wealth of knowledge and experience to any project we undertake. We collaborate effectively to harness our diverse skill sets to reach our objectives, unified in our commitment to excellence. We are enthusiastic, dedicated, and maintain a high degree of professionalism in our work, positioning us as a valuable asset to any organization. The opportunities that cross our paths ignite our excitement, and we constantly seek new challenges to undertake.                    </div>
+                        Combining a vast reservoir of knowledge and experience, we synergize our unique skills towards our shared goal of excellence. Our commitment, enthusiasm, and professional approach make us an invaluable addition to any organization. We thrive on new opportunities and consistently embrace exciting challenges.
+                    </div>
                 </div>
                 <div className="About-right-icons">
                     <div className="About-blocks-container">

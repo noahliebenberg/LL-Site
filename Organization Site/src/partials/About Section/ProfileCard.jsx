@@ -31,9 +31,12 @@ class ProfileCard extends Component {
         return (
             <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
                 <div className={styles.block} onClick={onClick} ref={this.frontCard}>
-                    <img className={styles.icon} src={imgSrc} alt={altText} onLoad={this.setCardDimensions} />
-                    <div className={styles.name}>{name}</div>
-                    <div className={styles.role}>{role}</div>
+                    <div className="profile-card-top">
+                        <img className={styles.icon} src={imgSrc} alt={altText} onLoad={this.setCardDimensions} />
+                        <div className={styles.name}>{name}</div>
+                        <div className={styles.role}>{role}</div>
+                    </div>
+
                     <div className={styles.description}>{description}</div>
                 </div>
 

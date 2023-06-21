@@ -55,8 +55,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 100px;
-
-
     min-width: 900px;
     height: auto;
 
@@ -154,7 +152,6 @@
 .link-for-more{
     display: flex;
     background-color: white;
-    width: fit-content;
     font-size: 10px;
     margin: 30px 0px;
     width: 50%;
@@ -165,9 +162,7 @@
     cursor: pointer;
     font-family: lato,sans-serif;
     line-height: 32px;
-    font-weight: 300;
     border-radius: 15px;
-    filter: blur(0.2px);
     font-weight: 600;
     box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .08);
 }

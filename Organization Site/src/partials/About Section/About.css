@@ -7,6 +7,10 @@ img, picture, iframe {
     display: grid;
 }
 /* Main classes */
+.main-container{
+    padding: 0 13rem;
+}
+
 .About-section{
     background-color: white;
     display: flex;
@@ -16,10 +20,10 @@ img, picture, iframe {
 }
 .About-left-text{
     font-family: "larken", sans-serif;
-
-    padding-left: 13rem;
     position: relative;
-    width: 40vw;
+    width: auto;
+    max-width: 20vw;
+    padding-top: 5rem;
 }
 .About-title{
     font-size: 28px;
@@ -28,12 +32,11 @@ img, picture, iframe {
     line-height: 1;
     color: black;
     z-index: 2;
-    padding-top: 7rem;
 }
 .About-text{
     font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     color: black;
-    font-size: 14px;
+    font-size: 20px;
     padding-top: 1.5rem;
     letter-spacing: 0.01em;
     opacity: 80%;
@@ -43,13 +46,14 @@ img, picture, iframe {
 
 }
 .About-blocks-container {
-    padding: 5rem;
-    padding-right: 13rem;
+    width: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr ));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr ));
     gap: 2rem;
     position: relative; /* Set position to relative to make the blocks absolute positioned */
+    padding-left: 3rem;
     margin-top: 5rem;
+    padding-top: 55px;
 }
 
 .block{
@@ -78,6 +82,7 @@ img, picture, iframe {
     border-radius: 200px;
     justify-self: center;
 }
+
 .About-profile-description{
     padding: 20px;
     font-weight: 400;
@@ -90,44 +95,57 @@ img, picture, iframe {
     color: #6e6e73;
 }
 /* Responsive */
+
+
 @media (max-width: 576px) {
     /* Styles for small screens */
     .About-section {
-        padding: 0 3rem;
+        padding: 0 1rem;
         flex-direction: column;
+        padding-bottom: 2rem;
+
     }
     .About-left-text{
-        padding: 0rem 0;
-        width: 100%;
+        padding-top: 5rem;
+        width: auto;
         padding-bottom: 1.5rem;
+        max-width: 100%;
     }
     .About-blocks-container{
         padding: 0rem 0rem;
         gap: 0;
-        margin-top: 0;
+        margin-top: 1.5rem;
+        padding-left: 0;
     }
-
     .About-title{
         text-align: center;
     }
-    .block{
-        margin: 1rem;
+    .About-text{
+        font-size: 18px;
     }
+    .About-blocks-container{
+        gap: 1rem;
+    }
+
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
 /* Styles for medium screens */
     .About-section {
-        padding: 0 3rem;
+        padding: 0 0rem;
         flex-direction: column;
     }
     .About-left-text{
-        padding: 0rem 0;
-        width: 100%;
+        max-width: 100%;
+        padding: 0rem 3rem;
+        padding-top: 5rem;
     }
     .About-blocks-container{
-        padding: 1.5rem;
+        padding: 0 3rem;
+        margin-top: 1.5rem;
+        gap: 1rem;
     }
+
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -137,11 +155,13 @@ img, picture, iframe {
         flex-direction: column;
     }
     .About-left-text{
-        padding: 0rem 0;
-        width: 100%;
+        max-width: 100%;
+        padding-top: 5rem;
     }
     .About-blocks-container{
-        padding: 1.5rem;
+        margin-top: 1.5rem;
+        padding: 0;
+        padding-left: 0;
     }
 }
 
@@ -149,13 +169,15 @@ img, picture, iframe {
     /* Styles for extra-large screens */
     .About-section {
         padding: 0 3rem;
+        flex-direction: column;
     }
     .About-left-text{
-        padding: 0rem 0;
-        width: 40vw;
+        max-width: 100%;
     }
     .About-blocks-container{
-        padding: 8rem 1.5rem;
+        margin-top: 1.5rem;
+        padding: 0;
+        padding-left: 0;
     }
 }
 
@@ -163,45 +185,23 @@ img, picture, iframe {
     /* Styles for extra-extra-large screens */
     .About-section {
         padding: 0 3rem;
-    }
-    .About-left-text{
-        padding: 0rem 0;
-        width: 40vw;
-    }
-    .About-blocks-container{
-        padding: 8rem 1.5rem;
-    }
-}
-
-@media (max-width: 576px) {
-    /* Styles for small screens */
-    .About-section {
-        padding: 0 1rem;
         flex-direction: column;
     }
     .About-left-text{
-        padding: 0rem 0;
-        width: 100%;
-        padding-bottom: 1.5rem;
+        max-width: 100%;
     }
     .About-blocks-container{
-        padding: 0rem 0rem;
-        gap: 1rem;
-        justify-content: center; /* Center the blocks horizontally */
-        align-items: center; /* Center the blocks vertically */
-    }
-    .About-title{
-        text-align: center;
-    }
-    .block{
-        margin: 1rem auto; /* Ensure blocks are centered by adding automatic horizontal margins */
-        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 1.5rem;
     }
 }
+
 
 .contact-line{
     display: grid;
     height: 36px;
+    width: auto;
     margin-bottom: 20px;
 }
 .contact-line-link{
@@ -219,7 +219,7 @@ img, picture, iframe {
     -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
-    width: 100px;
+    width: auto;
 }
 .contact-line-link img{
     user-select: none;
