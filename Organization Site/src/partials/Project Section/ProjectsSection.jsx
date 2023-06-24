@@ -60,7 +60,7 @@ function ProjectsSection() {
                     <div>
                         <div className="product-type">WEB APPLICATION</div>
                         <div className="product-title">WINE ART</div>
-                        <div className="project-about">A project developed with Express, Node JS and deployed using Google cloud services. Get your portrait done in your favorite wine by simply uploading a picture. Transform Your Photos into Works of Art </div>
+                        <div className="project-about">Get your portrait done in your favorite wine by simply uploading a picture. Transform Your Photos into Works of Art </div>
                         <div className="link-for-more" style={{ color: "#724345"}}><Link to="/wine">More Details</Link></div>
                     </div>
                     <div className="project-logo align-right">
@@ -72,7 +72,7 @@ function ProjectsSection() {
                     <div>
                         <div className="product-type">Mobile APPLICATION</div>
                         <div className="product-title">Auto Sage</div>
-                        <div className="project-about">Auto Sage is the ultimate app for accurate car pricing and seamless buying and selling experiences. Powered by AI, it provides real-time valuations based on comprehensive market data. Access fair market values, compare prices.</div>
+                        <div className="project-about">Auto Sage is the ultimate app for accurate car pricing and seamless buying and selling experiences. Powered by AI.</div>
                         <div className="link-for-more" style={{ color: "#94ad82"}}>  <Link to="/contact">More Details</Link></div>
                     </div>
                     <div className="project-logo align-right">

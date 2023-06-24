@@ -39,7 +39,7 @@
     background: white;
     display: grid;
     grid-auto-flow: column;
-    gap: 20px;
+    gap: 50px;
 
     overflow-x: auto;
     padding: 50px;
@@ -54,7 +54,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 100px;
+    padding: 50px;
     min-width: 900px;
     height: auto;
 
@@ -65,7 +65,7 @@
 }
 
 .media-element:hover {
-    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .38);
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .8);
     transform: scale(1.03);
     cursor: auto;
 }
@@ -143,7 +143,7 @@
 .project-about{
     font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     color: white;
-    font-size: 14px;
+    font-size: 20px;
     padding-top: 1.5rem;
     letter-spacing: 0.01em;
     opacity: 80%;
@@ -186,6 +186,12 @@
 /* Responsive */
 @media (max-width: 576px) {
     /* Styles for small screens */
+    .media-scroller{
+        gap: 15px;
+    }
+    .project-about{
+        font-size: 18px;
+    }
     .projects-section {
         padding: 0;
         flex-direction: column;
@@ -215,6 +221,9 @@
 
 @media (min-width: 577px) and (max-width: 768px) {
     /* Styles for medium screens */
+    .media-scroller{
+        gap: 15px;
+    }
     .projects-section {
         flex-direction: column;
     }
@@ -235,6 +244,7 @@
         background: white;
         border-radius: 10px;
         box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .6);
+        gap: 20px;
     }
     .project-section-title{
         padding: 0 3rem;
@@ -246,6 +256,9 @@
 
 @media (min-width: 769px) and (max-width: 992px) {
     /* Styles for large screens */
+    .media-scroller{
+        gap: 15px;
+    }
     .projects-section {
         flex-direction: column;
     }
@@ -266,6 +279,7 @@
         background: white;
         border-radius: 10px;
         box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .6);
+        gap: 20px;
     }
     .project-section-title{
         padding: 0 3rem;
@@ -278,6 +292,9 @@
 
 @media (min-width: 993px) and (max-width: 1200px) {
     /* Styles for extra-large screens */
+    .media-scroller{
+        gap: 20px;
+    }
     .projects-section {
         flex-direction: column;
     }
@@ -298,6 +315,7 @@
         background: white;
         border-radius: 10px;
         box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .6);
+        gap: 20px;
     }
     .project-section-title{
         padding: 0 3rem;
@@ -309,6 +327,9 @@
 
 @media (min-width: 1201px) and (max-width: 1450px) {
     /* Styles for extra-extra-large screens */
+    .media-scroller{
+        gap: 20px;
+    }
     .projects-section {
         flex-direction: column;
     }
@@ -329,6 +350,7 @@
         background: white;
         border-radius: 10px;
         box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .6);
+        gap: 20px;
     }
     .project-section-title{
         padding: 0 3rem;
