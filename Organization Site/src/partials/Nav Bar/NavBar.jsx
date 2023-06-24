@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './NavBar.css'
+import {Link} from "react-router-dom";
 
 function NavBar() {
     // State variable to track whether menu is open or closed
@@ -61,14 +62,15 @@ function NavBar() {
         <div>
             <nav className={`NavBar ${menuOpen ? "menu-open" : ""}`}>
                 <div className="Logo">
-                    <span><strong>Lieben</strong> Logistics</span>
+                    <Link to="/"><span><strong>Lieben</strong> Logistics</span></Link>
                 </div>
 
                 <ul className="links">
-                    <li><a href="#Featured">Upcoming Projects</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#Contact">Contact Us</a></li>
+                    <li><a className="nav-buttons" href="#Featured">Upcoming Projects</a></li>
+                    <li><a className="nav-buttons" href="#About">About</a></li>
+                    <li><a className="nav-buttons" href="#Portfolio">Portfolio</a></li>
+                    <li><a className="nav-buttons" href="#Contact">Contact Us</a></li>
+                    <Link to="/contact" className="cta-button">Enquire</Link>
                 </ul>
                 <ul>
                     <button className="menu-button" onClick={toggleMenu} ref={buttonRef}>Menu</button>
@@ -80,6 +82,7 @@ function NavBar() {
                         <button className="drop-link"><a href="#About">About</a></button>
                         <button className="drop-link"><a href="#Portfolio">Portfolio</a></button>
                         <button className="drop-link"><a href="#Contact">Contact Us</a></button>
+                        <Link to="/contact" className="cta-button margin-top">Enquire</Link>
                     </div>
                 </div>
             </nav>

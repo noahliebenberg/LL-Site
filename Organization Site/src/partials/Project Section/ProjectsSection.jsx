@@ -73,7 +73,7 @@ function ProjectsSection() {
                         <div className="product-type">Mobile APPLICATION</div>
                         <div className="product-title">Auto Sage</div>
                         <div className="project-about">Auto Sage is the ultimate app for accurate car pricing and seamless buying and selling experiences. Powered by AI, it provides real-time valuations based on comprehensive market data. Access fair market values, compare prices.</div>
-                        <div className="link-for-more" style={{ color: "#94ad82"}}>  <Link to="/car">More Details</Link></div>
+                        <div className="link-for-more" style={{ color: "#94ad82"}}>  <Link to="/contact">More Details</Link></div>
                     </div>
                     <div className="project-logo align-right">
                         <img className="img-product" src={carImage} alt="Car" />

@@ -11,12 +11,10 @@ import './css/style.css';
 import AOS from 'aos';
 
 import Home from './pages/Home';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-import ResetPassword from './pages/ResetPassword';
 import TurbinePage from './pages/ProjectPages/TurbinePage';
 import CarPage from './pages/ProjectPages/AutoSagePage';
 import WinePage from './pages/ProjectPages/WinePage';
+import CTA from "./pages/LetsChatPage/CTA";
 
 function App() {
 
@@ -40,12 +38,10 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/turbine" element={<TurbinePage />} />
         <Route path="/car" element={<CarPage />} />
         <Route path="/wine" element={<WinePage />} />
+        <Route path="/contact" element={<CTA />} />
       </Routes>
     </>
   );
