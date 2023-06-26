@@ -14,7 +14,7 @@ import Home from './pages/Home';
 import TurbinePage from './pages/ProjectPages/TurbinePage';
 import CarPage from './pages/ProjectPages/AutoSagePage';
 import WinePage from './pages/ProjectPages/WinePage';
-import CTA from "./pages/LetsChatPage/CTA";
+import CTA from "./pages/EnquirePage/CTA";
 
 function App() {
 

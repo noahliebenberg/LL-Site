@@ -57,11 +57,7 @@ const WinePage = () => {
                                         <div className="tab-title">Legal Compliance</div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deserunt distinctio fugiat fugit harum illum ipsam numquam quia veritatis voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias cumque deserunt distinctio doloremque dolorum minus necessitatibus numquam obcaecati placeat!</p>
                                     </div>
-
                                 </section>
-                                <div className="view-project">
-                                    <a>Visit Site</a>
-                                </div>
                             </div>
 
                         </div>
