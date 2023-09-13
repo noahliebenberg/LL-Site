@@ -32,7 +32,7 @@ class About extends Component {
                     </div>
 
                     <div className="About-text-highlight">
-                        Contact details behind cards
+                        Tap card for Contact Details
                     </div>
 
                     </div>
