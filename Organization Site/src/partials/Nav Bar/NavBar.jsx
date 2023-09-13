@@ -81,7 +81,6 @@ function NavBar() {
                         <button className="drop-link"><a href="#About">About</a></button>
                         <button className="drop-link"><a href="#Portfolio">Portfolio</a></button>
                         <button className="drop-link"><a href="#Contact">Contact Us</a></button>
-                        <Link to="/contact" className="cta-button margin-top">Enquire</Link>
                     </div>
                 </div>
             </nav>
