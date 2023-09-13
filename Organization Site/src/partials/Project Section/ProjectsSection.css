@@ -35,11 +35,11 @@
 }
 
 .media-scroller{
-    --spacer: 20px;
+    --spacer: 10px;
     background: white;
     display: grid;
     grid-auto-flow: column;
-    gap: 50px;
+    gap: 25px;
 
     overflow-x: auto;
     padding: 50px;
@@ -225,7 +225,7 @@
 @media (min-width: 577px) and (max-width: 768px) {
     /* Styles for medium screens */
     .media-scroller{
-        gap: 15px;
+        gap: 10px;
     }
     .projects-section {
         flex-direction: column;
@@ -260,7 +260,7 @@
 @media (min-width: 769px) and (max-width: 992px) {
     /* Styles for large screens */
     .media-scroller{
-        gap: 15px;
+        gap: 10px;
     }
     .projects-section {
         flex-direction: column;
@@ -296,7 +296,7 @@
 @media (min-width: 993px) and (max-width: 1200px) {
     /* Styles for extra-large screens */
     .media-scroller{
-        gap: 20px;
+        gap: 10px;
     }
     .projects-section {
         flex-direction: column;
