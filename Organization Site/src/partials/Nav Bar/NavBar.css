@@ -52,13 +52,38 @@
     transition: background-color 0.3s, color 0.3s;
     text-align: center;
 }
-
 .cta-button:hover {
     background-color: white;
     color: #3A4856;
     font-weight: 600;
     cursor: pointer;
 }
+
+.back-button {
+    background-color: #3A4856;
+    color: white;
+
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 2rem;
+    padding: 3px 2rem;
+
+    position: relative;
+    border-radius: 20px;
+    border: 2px #3A4856 solid;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+.back-button:hover {
+    background-color: white;
+    color: #3A4856;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
 .margin-top{
     margin-top: 1.5rem;
 }

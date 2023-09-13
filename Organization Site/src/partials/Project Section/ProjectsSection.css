@@ -177,10 +177,13 @@
 }
 
 #Product-2{
-    background-color: #74B3CE;
+    background-color: #3ba8a8;
 }
 #Product-3{
     background-color: #94ad82;
+}
+#Product-4{
+    background-color: rgba(2, 17, 27, 0.96);
 }
 
 /* Responsive */

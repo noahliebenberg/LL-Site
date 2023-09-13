@@ -5,23 +5,17 @@ import './FooterSection.css'
 
 function Footer() {
     const experienceList = [
-        "Entrepreneurship",
         "Deployment",
         "Contract Law",
         "Cloud Hosting",
-        "Startups",
         "Mobile Apps",
         "Legal Compliance",
         "Desktop Apps",
-        "Business Development",
         "Security",
-        "Strategic Planning",
-        "Product Management",
-        "Leadership",
         "Data Analysis",
         "UX/UI Design",
-        "Digital Marketing",
         "Machine Learning",
+        "Web Dev"
     ];
 
   return (
@@ -56,10 +50,6 @@ function Footer() {
                           <h6>Quick Links</h6>
                           <ul className="footer-links">
                               <li><a href="#About">About Us</a></li>
-                              <li><a href="#Contact">Contact Us</a></li>
-                              <li><a href="#">Privacy Policy</a></li>
-                              <li><a href="#">Sitemap</a></li>
-                              <li><a href="#">Terms of Service</a></li>
                           </ul>
                       </div>
                   </div>

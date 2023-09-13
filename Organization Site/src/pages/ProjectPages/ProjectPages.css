@@ -1,10 +1,6 @@
 
 
-.WinePage{
-    background-color: #724345;
-    height: auto;
-    Width: 100vw;
-}
+
 .WineArt-title{
     font-family: "larken", sans-serif;
     color: white;
@@ -323,11 +319,15 @@ input[type='radio']{
     Width: 100vw;
 }
 .TurbinePage{
-    background-color: #74B3CE;
+    background-color: rgba(2, 17, 27, 0.96);
     height: 100vh;
     Width: 100vw;
 }
 
-
+.WinePage{
+    background-color: #724345;
+    height: 100%;
+    width: 100vw;
+}
 
 

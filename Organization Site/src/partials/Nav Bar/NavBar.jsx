@@ -70,7 +70,6 @@ function NavBar() {
                     <li><a className="nav-buttons" href="#About">About</a></li>
                     <li><a className="nav-buttons" href="#Portfolio">Portfolio</a></li>
                     <li><a className="nav-buttons" href="#Contact">Contact Us</a></li>
-                    <Link to="/contact" className="cta-button">Enquire</Link>
                 </ul>
                 <ul>
                     <button className="menu-button" onClick={toggleMenu} ref={buttonRef}>Menu</button>
