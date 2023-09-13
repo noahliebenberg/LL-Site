@@ -89,7 +89,7 @@ function ProjectsSection() {
                 <div className="media-element" id="Product-4">
                     <div>
                         <div className="product-type">WEB APPLICATION</div>
-                        <div className="product-title">Online Business Management Degree powerd by AI</div>
+                        <div className="product-title">Online Business Management Degree</div>
                         <div className="project-about">To be announched</div>
                         <div className="product-type" >Developer - Yochanan, Noah Liebenberg</div>
                         <div className="link-for-more" style={{ color: "rgba(2,17,27,0.96)"}}><Link to="/turbine">More Details</Link></div>
