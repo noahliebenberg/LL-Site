@@ -28,7 +28,7 @@ class About extends Component {
                     <div className="About-title"><h1>About<span className="grey"> us </span></h1></div>
 
                     <div className="About-text">
-                        We are here with three brothers who have carved out their own paths in the technology and the legal sector, each bringing a unique set of specialized skills and experiences to our respective fields.
+                        Working within technology and law.
                     </div>
 
                     <div className="About-text-highlight">
